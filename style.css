@@ -1,0 +1,437 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+nav button{
+  color:white;
+  background-color: red;
+  border:none;
+  width:20vmin;
+  height: 3.5vmax;
+  margin-left: -9vw;
+  border-radius: 4px;
+  font-weight: 450;
+  font-family: "Nunitio";
+  position:relative;
+  
+}
+ nav button:hover{
+  color:red;
+  background-color: white;
+}
+.select{
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  display:grid;
+  margin-left: 0.1vmin;
+}
+.open{
+  grid-area: 1/1;
+}
+.select select{
+  color: transparent;       /* hides text */
+  background: none;         /* optional: remove default background */
+  border: none;             /* optional: remove border */
+  appearance: none;         /* hides arrow (most browsers) */
+  -webkit-appearance: none; /* hides arrow (Safari/Chrome) */
+  -moz-appearance: none;    /* hides arrow (Firefox) */
+  width: 100px;             /* set your width */
+  height: 28px;             /* set your height */
+  cursor: pointer;
+  position:relative;
+  width:12vmin;
+  border:solid 0.5px gray;
+  border-radius: 5px;
+  grid-area: 1/1;
+  padding: 2vw;
+  left:-12vmin;
+}
+.select label img{
+  height:1.8vmax;
+  width: 5vmin;
+  position:relative;
+  top:0.5vmax;
+}
+.select label svg{
+  position: relative;
+  top:0.5vmax;
+}
+.input{
+  margin-top:-3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.input button span:hover,.input button:hover,.input button:hover svg path {
+  stroke: red;
+  color:red;
+  background-color: white;
+}
+.input input{
+  color:white;
+  margin-top: 1vh;
+  padding: 0 4vw 0 4vw ;
+  height: 6vh;
+  margin: 10vw;
+  background-color: black;
+  filter: opacity(60%);
+  border:solid 1.3px gray;
+  border-radius: 5px;
+}
+.input input::placeholder{
+  font-size: 16px;
+  position: relative;
+  left:0vw;
+  color:white;
+  font-weight: 400;
+}
+.input button svg{
+  position: relative;
+  top:0.5vh;
+  left:0vw;
+}
+.input button span{
+  position: relative;
+  left:0vw;
+  top:-0.5vh;
+  color:white;
+  font-weight: bolder;
+  font-size: 18px;
+  font-family: "Inter";
+  border-radius: 2px;
+  font-weight: 500;
+}
+.input button{
+  align-self: center;
+  height: 6vh;
+  width: 40vw;
+  margin-top:-2.5vh;
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+}
+.main{
+  top:0;
+  position:absolute;
+  background-image:url('bg.jpg');
+  height:100vh;
+  width:100vw;
+  background-size: center center;
+  background-repeat: no-repeat;
+  filter: brightness(0.25);
+  z-index: -2;
+}
+.text{
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+}
+.onc{
+  margin-top: 3vh;
+  font-size: 16px;
+  margin-right: 12vw ;
+  margin-left: 12vw ;
+  line-height: 1.5;
+}
+.onc1{
+  margin-top: 1vh;
+  font-size: 16px;
+}
+.once{
+  margin-top: 7.5vh;
+  margin-right: 5vw ;
+  margin-left: 5vw ;
+  
+}
+.logo{
+  position: relative;
+  height: 3vh;
+  margin-right: 25vw;
+  margin-top: 1.5vh;
+}
+h1{
+  color:white;
+  font-family: "martel Sans";
+  line-height: 1.2;
+  font-weight: 500;
+}
+p{
+  color:white;
+  font-family: "Inter";
+  line-height: 1.2;
+  font-weight: 350;
+}
+nav{
+  margin: 4vh;
+  display: flex;
+}
+
+.logo{
+  position: relative;
+  top:-1vh;
+}
+.content{
+  height: 450vh;
+  width:100vw ;
+  position: relative;
+  top:17vh;
+  background: linear-gradient(to bottom, #0C0721, #000000);
+  }
+.line {
+    width: 100vw;
+  position: relative;
+  height: 4px; /* height of the border */
+  background: linear-gradient(
+    to right,
+    #d90160 0%,     /* left corner - red */
+    #d90160 10%,
+    #FF0000 45%,    /* center - black */
+     #FF0000 55%,
+    #d90160 97%,    /* right corner - blue */
+    #d90160 100%
+  );
+  top:17vh;
+}
+.trendstxt{
+  color:white;
+  position: relative;
+  top:-2vh;
+  left:-10vw;
+}
+.box img{
+  margin-top: 1vh;
+  height: 22vh;
+  width:30vw;
+  object-fit: cover;
+  padding-left:1vw;
+  border-radius: 4vw;
+  margin-left:-7vw;
+}
+ .box .bro{
+     
+  margin-left: 1vw;  
+}
+.box .bro{
+  margin-right: -22vw;
+}
+.box img:hover{
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out ;
+}
+.box .imge{
+  margin-left:2.2vw;
+}
+.box span{
+  -webkit-text-stroke: 2px white;
+  font-size: 80px;
+  font-weight: 900;
+  position: relative;
+  top:11vh;
+  left:-32vw;
+  z-index: 20;
+  color:black;
+  flex: 0 1 20%; /* shows 2 items per view */
+  scroll-snap-align: start;
+  scroll-snap-stop:always;
+}
+.box{
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  height:25vh;
+  display:flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.trends{
+  padding: 0 7vw 0 7vw;
+  position: relative;
+  top:10vh;
+}
+.why{
+  color:white;
+  position: relative;
+  top:10vh;
+  left:-10vw;
+}
+.boxy{
+  height:25vh ;
+  width:80vw ;
+  margin:auto;
+  position: relative;
+  top:12vh;
+   background: linear-gradient(155deg,   #1c1c38,#1c172d,	#1c172d,	  #1f1425, #13001a);
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 1.4vh;
+  color: white;
+  font-family: sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+.boxy h2{
+  font-weight: 500;
+  font-size: 22px;
+  color:#FFF1FA;
+}
+.boxy p{
+  position: relative;
+  top:3vh;
+  font-size: 15px;
+  font-family: "Nunito";
+  color:gray;
+}
+.boxy img {
+  position: relative;
+  top:3vh;
+  left:57vw;
+  height: 14vh;
+  width:20vw;
+    filter: drop-shadow(0 0 2px pink) drop-shadow(0 0 5px pink);
+  -webkit-filter: drop-shadow(0 0 2px pink) drop-shadow(0 0 5px pink);
+
+}
+.boxy .ping{
+  position: relative;
+  top:6vh;
+  left:57vw;
+  height: 14vh;
+  width:20vw;
+}
+
+h3{
+  color:white;
+  position: relative;
+  top:30vh;
+  margin-left: 10vw;
+  font-size:21px;
+  left:-5vw;
+}
+details{
+  
+  color:white;
+   position: relative;
+  top:30vh;
+  left:5vw;
+  width:90vw;
+  display:flex;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+.firstdet{
+  margin-top: 2vh;
+}
+details summary{
+  align-content: center;
+  background-color: #2d2d2d;
+  height:14vh;
+  padding-bottom: vh;
+  padding-left: 5vw;
+  font-size: 18px;
+}
+details p{
+  padding: 5vw;
+  overflow-x:auto ;
+  width:80vw;
+  margin-top: 0.2vh;
+  background-color: #2d2d2d;
+  font-size: 18px;
+}
+summary {
+  list-style: none; /* For some browsers */
+}
+
+summary::-webkit-details-marker {
+  display: none; /* For Chrome, Safari, and other WebKit browsers */
+}
+details summary span{
+  font-size: 40px;
+  position: absolute;
+  top:4vh;
+  right:5vw;
+  font-weight: 300;
+}
+
+.end p,.end input,.end button{
+  position: relative;
+  top:42vh;
+}
+.end p{
+  font-weight: 400;
+  line-height:4vh;
+}
+.end{
+  margin:0 5vw 0 5vw;
+  
+  width:90vw;
+  height: 100vh;
+}
+.end input{
+  margin-top: 1vh;
+  padding: 0 4vw 0 4vw ;
+  height: 8vh;
+  width:80vw;
+  margin-top: 7vw;
+  background-color: #0f0f0f;
+  
+  border:solid 1.3px gray;
+  border-radius: 3px;
+}
+.end button{
+  top:47vh;
+  align-self: center;
+  height: 6vh;
+  width: 40vw;
+  margin-top:-2.5vh;
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+}
+.end button svg{
+  position: relative;
+  top:0.5vh;
+  left:0vw;
+}
+.end button span{
+  position: relative;
+  left:0vw;
+  top:-0.5vh;
+  color:white;
+  font-weight: bolder;
+  font-size: 18px;
+  font-family: "Inter";
+  border-radius: 2px;
+  font-weight: 500;
+}
+.end input::placeholder{
+  font-size: 16px;
+  position: relative;
+  left:0vw;
+  color:white;
+  font-weight: 100;
+}
+.link{
+  position: relative;
+  top:-20vh;
+  margin-left:5vw;
+  height: 100vh;
+  width:90vw;
+  
+}
+.link p{
+  color:gray;
+  margin-top:2vh;
+}
+.contact{
+  padding-bottom:10vh;
+}
+.last{
+  position: relative;
+  font-size: 24px;
+  top:15vh;
+  margin-top: 40vh;
+  font-weight: 800;
+}
